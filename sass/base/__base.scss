@@ -1,0 +1,29 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--base-text-color);
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+  
+.container {
+    width: 1200px;
+    margin: auto; 
+    padding: 0 15px;
+}
+  
+.list {
+    list-style: none;
+}
+
+.card-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--indent);
+}
+  
+.card-set {
+    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}

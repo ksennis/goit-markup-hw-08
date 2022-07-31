@@ -1,0 +1,37 @@
+.footer {
+    padding: 60px 0;
+    background-color: var(--dark-background);
+      
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--text-color-white);
+        margin-bottom: 20px;
+    }
+
+    &__adress {
+        font-style: normal;
+        margin-top: 20px
+    }
+}
+   
+.footer__container {
+    display: flex;
+    align-items: baseline;
+}
+  
+.footer__container-socials {
+    margin-left: 70px;
+}
+  
+.adress__item:not(:first-child) {
+    margin-top: 9px;
+}
+
+.adress__link {
+    line-height: 1.7;
+}
+

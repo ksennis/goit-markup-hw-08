@@ -1,0 +1,25 @@
+.link {
+    @extend %flex-centered;
+    cursor: pointer;
+    color: var(--base-text-color);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    transition: var(--animation-color);
+}
+
+.link--grey {
+    color: var(--text-color-grey);
+}
+  
+.link--white {
+    color: var(--text-color-white);
+}
+
+.link--active, 
+.link:hover,
+.link:focus {
+    color: var(--accent-color);
+}
