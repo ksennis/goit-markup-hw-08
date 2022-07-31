@@ -1,3 +1,5 @@
+@import url(../base/__breakpoints.scss);
+
 .solution {
     max-width: 1600px;
     margin: 0 auto;
@@ -8,19 +10,28 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 200px 0;
+    padding: 118px 0;
     position: relative;
+
+    @include for-desktop-up {
+        padding: 200px 0;
+    }
 
     &__title {
         font-weight: 900;
-        font-size: 44px;
+        font-size: 26px;
         line-height: 1.36;
         color: var(--text-color-white);
         text-align: center;
         text-transform: uppercase;
-        max-width: 700px;
+        max-width: 456px;
         margin: 0 auto;
         letter-spacing: 0.06em;
+
+        @include for-desktop-up {
+            max-width: 700px;
+            font-size: 44px;
+        }
     }
 }
   

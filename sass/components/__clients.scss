@@ -6,9 +6,17 @@
 }
   
 .clients-list {
-    --items: 6;
-    --indent: 30px;
     margin-top: 50px;
+    --items: 2;
+    
+    @include for-tablet-up {
+        --items: 3
+    }
+
+    @include for-desktop-up {
+        --items: 6;
+        --indent: 30px;
+    }
 }
   
 .client-item {

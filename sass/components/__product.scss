@@ -1,7 +1,18 @@
 .product {
-    --items: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    --items: 1;
     --indent: 30px;
     padding-top: 50px;
+
+    @include for-tablet-up {
+        --items: 2;
+    }
+
+    @include for-desktop-up {
+        --items: 3;
+    }
 
     &__info {
         border: 1px solid var(--grey-border);
@@ -26,6 +37,7 @@
 }
 
 .product__list {
+    max-width: 370px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover .product__text {

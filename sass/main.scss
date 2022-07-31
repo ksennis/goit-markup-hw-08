@@ -1,4 +1,5 @@
 @import "./base/_variables";
+@import "./base/_breakpoints";
 @import "./base/_base";
 @import "./base/_normalize";
 
@@ -22,9 +23,10 @@
 @import "./components/_our-team";
 @import "./components/_socials";
 @import "./components/_product";
+@import "./components/_mobile-menu";
 
 
-@import "./utils/placeholders";
+@import "./utils/__placeholders";
 // @import "./components/_clients";
 
 

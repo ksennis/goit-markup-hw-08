@@ -16,12 +16,33 @@
 }
   
 .benefits__block {
-    --items: 4;
+    --items: 1;
     --indent: 30px;
+    max-width: 320px;
+
+    @include for-tablet-up {
+        --items: 2;
+        gap: 30px 50px;
+    }
+
+    @include for-desktop-up {
+        --items: 4;
+        --indent: 30px;
+    }
 }
   
 .benefits__list {
-    justify-content: space-between;
+    justify-content: center;
+    gap: 30px;
+
+    @include for-tablet-up {
+        gap: 57px 30px;
+    }
+
+
+    @include for-desktop-up {
+        gap: 30px;
+    }
 } 
   
 .benefits__icon {

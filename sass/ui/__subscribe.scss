@@ -1,8 +1,25 @@
 .subscribe {
-    margin-left: 93px;
+    width: 100%;
+
+    @include for-desktop-up {
+        width: auto;
+        margin-left: 62px;
+    }
+
+    &__form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include for-desktop-up {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+    }
 
     &__input {
-        width: 346px;
+        width: 100%;
         height: 50px;
         border: 1px solid rgba(255, 255, 255, 0.3);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -11,9 +28,18 @@
         background-color: var(--dark-background);
         color: var(--text-color-white);
         outline: none;
+
+        @include for-tablet-up {
+            width: 450px;
+        }
+
+        @include for-desktop-up {
+            width: 346px;
+        }
     }
       
     &__btn {
+        margin-top: 20px;
         font-weight: 700;
         font-size: 16px;
         line-height: 1.88;
@@ -25,9 +51,13 @@
         width: 200px;
         height: 50px;
         border: none;
-        margin-left: 12px;
         @extend %flex-centered;
         cursor: pointer;
+
+        @include for-desktop-up {
+            margin-top: 0;
+            margin-left: 12px;
+        }
     }
       
     &__icon {
