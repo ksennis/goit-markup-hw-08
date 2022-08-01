@@ -14,9 +14,17 @@ body {
 }
   
 .container {
-    max-width: 1200px;
+    max-width: 480px;
     margin: auto; 
     padding: 0 15px;
+
+    @include for-tablet-up {
+        max-width: 768px;
+    }
+
+    @include for-desktop-up {
+        max-width: 1200px;
+    }
 }
   
 .list {

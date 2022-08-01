@@ -1,10 +1,11 @@
+
+$gradient: linear-gradient(0deg, rgba(47, 48, 58, 0.4),  rgba(47, 48, 58, 0.4));
+
 .solution {
     max-width: 1600px;
     margin: 0 auto;
     background-color: var(--dark-background);
-    background-image: 
-    linear-gradient(0deg, rgba(47, 48, 58, 0.4),  rgba(47, 48, 58, 0.4)), 
-    url("../images/solution-img.jpg");
+    background-image: $gradient, url("../images/solution-img.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -12,9 +13,11 @@
     position: relative;
 
     @include for-pixel-ratio-2 {
-        background-image: 
-        linear-gradient(0deg, rgba(47, 48, 58, 0.4),  rgba(47, 48, 58, 0.4)), 
-        url("../images/solution-img@2x.jpg");
+        background-image: $gradient, url("../images/solution-img@2x.jpg");
+    }
+
+    @include for-pixel-ratio-3 {
+        background-image: $gradient, url("../images/solution-img@3x.jpg");
     }
 
     @include for-desktop-up {

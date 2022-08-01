@@ -23,3 +23,11 @@
         @content;
     }
 }
+
+@mixin for-pixel-ratio-3 {
+    @media (min-device-pixel-ratio: 3),
+        (min-resolution: 3dppx),
+        (min-resolution: 192dpi) {
+        @content;
+    }
+}

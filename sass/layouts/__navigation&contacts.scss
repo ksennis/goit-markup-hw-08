@@ -57,15 +57,33 @@
 }
   
 .contacts__icon-mail {
-    width: 16px;
-    height: 12px;
+    width: 14px;
+    height: 10px;
     fill: currentColor;
     margin-right: 10px;
+
+    @include for-desktop-up {
+        width: 16px;
+        height: 12px;
+    }
 }
   
 .contacts__icon-phone {
     width: 10px;
-    height: 16px;
+    height: 14px;
     fill: currentColor;
     margin-right: 10px;
+
+    @include for-desktop-up {
+        width: 12px;
+        height: 16px;
+    }
+}
+
+.contacts__link {
+    font-size: 12px;
+
+    @include for-desktop-up {
+        font-size: 14px;
+    }
 }

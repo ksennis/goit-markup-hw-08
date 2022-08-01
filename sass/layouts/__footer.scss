@@ -26,8 +26,7 @@
     }
 
     &__logo {
-        display: inline-block;
-        margin-right: 0 !important;
+        margin: auto;
     }
 
     &__adress-and-socials {
@@ -52,19 +51,21 @@
         text-align: left;
         flex-direction: row;
         align-items: baseline;
+        gap: 0px;
     }
 
     // align-items: baseline;
 }
   
 .footer__socials {
-    margin-bottom: 0 !important;
+    margin-bottom: 0;
 }
 
 .footer__container-socials {
     margin-top: 60px;
 
     @include for-tablet-up {
+        margin-top: 0;
         margin-left: 165px;
     }
 
@@ -79,7 +80,7 @@
 
 @include for-desktop-up {
     .adress__link {
-        display: block !important;
+        display: block;
         line-height: 1.7;
     }
 }

@@ -31,7 +31,7 @@
     }
 
     &__link {
-        display: block !important;
+        display: block;
         font-size: 40px;
         font-weight: 500;
     }
@@ -41,13 +41,17 @@
     }
 
     &__phone {
-        display: block !important;
-        font-size: 34px;
+        display: block;
+        font-size: 24px;
         color: var(--accent-color);
+
+        @include for-phone-up {
+            font-size: 34px;
+        }
     }
 
     &__email {
-        display: block !important;
+        display: block;
         margin-top: 32px;
         font-size: 24px;
         color: var(--text-color-grey);
@@ -62,7 +66,7 @@
         color: var(--accent-color);
         font-weight: 500;
         font-size: 18px;
-        border-right: 1px solid var(--accent-color);
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
 
         &:first-child { padding-left: 0; }
         &:last-child {

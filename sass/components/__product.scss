@@ -1,7 +1,5 @@
 .product {
     display: flex;
-    align-items: center;
-    justify-content: center;
     --items: 1;
     --indent: 30px;
     padding-top: 50px;
@@ -15,6 +13,7 @@
     }
 
     &__info {
+        flex-grow: 1;
         border: 1px solid var(--grey-border);
         border-top: none;
         padding: 20px 24px;
@@ -37,7 +36,9 @@
 }
 
 .product__list {
-    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    // max-width: 370px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover .product__text {
@@ -45,19 +46,21 @@
       }
 }
 
-.product__list:hover, :focus {
+.product__list:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px
     rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     cursor: pointer;
 }  
-
-
 
 .product__overlay {
     position: relative;
     overflow: hidden;
 }
   
+.product__img {
+    width: 100%;
+}
+
 .product__text {
     font-weight: 400;
     font-size: 18px;

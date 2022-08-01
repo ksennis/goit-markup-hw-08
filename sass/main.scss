@@ -2,6 +2,7 @@
 @import "./base/_breakpoints";
 @import "./base/_base";
 @import "./base/_normalize";
+@import "./utils/__placeholders";
 
 @import "./ui/_link";
 @import "./ui/_form-field";
@@ -9,11 +10,11 @@
 @import "./ui/_subscribe";
 @import "./ui/_button";
 
+@import "./layouts/_logo";
 @import "./layouts/_modal";
 @import "./layouts/_footer";
 @import "./layouts/_navigation&contacts";
 @import "./layouts/_header";
-@import "./layouts/_logo";
 
 @import "./components/_clients";
 @import "./components/_work";
@@ -24,9 +25,6 @@
 @import "./components/_socials";
 @import "./components/_product";
 @import "./components/_mobile-menu";
-
-
-@import "./utils/__placeholders";
 // @import "./components/_clients";
 
 
